@@ -1,3 +1,6 @@
+.container{
+  margin: 10px;
+}
 table {
   width: 100%;
 }
@@ -6,3 +9,15 @@ input {
   border: none;
   outline: none;
 }
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+ tr.mat-header-row {
+  height: 56px;
+  background-color: darkslategrey;
+}
+th{
+  color: whitesmoke;
+} 

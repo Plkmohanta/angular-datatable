@@ -40,6 +40,10 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
   <!-- paginator -->
-  <mat-paginator [pageSizeOptions]="[ 10, 20,50]" showFirstLastButtons></mat-paginator>
+   <div>
+      <mat-paginator style="display: flex; justify-content: left; "
+        [pageSizeOptions]="[ 10, 20,50]" showFirstLastButtons></mat-paginator>
+      <button (click)="dataSaved()" style="float: right; margin-top: -40px;" mat-raised-button color="primary">SAVE</button>
+    </div>
 
 </div>

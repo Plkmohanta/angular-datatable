@@ -10,15 +10,16 @@ export class AppService {
 
   constructor(private http: HttpClient) { }
 
-  getAllData(): Observable<PeriodicElement> {
-    return this.http.get<PeriodicElement>('https://jsonplaceholder.typicode.com/posts');
+  getAllData(): Observable<DataModel[]> {
+    return this.http.get<DataModel[]>('https://jsonplaceholder.typicode.com/photos');
   }
 }
 
 
-export interface PeriodicElement {
-  userId: number;
+export interface DataModel {
+  albumId: number;
   id: number;
   title: string;
-  body: string;
+  url: string;
+  thumbnailUrl:string;
 }
